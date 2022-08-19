@@ -1,4 +1,4 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // // #1
 // for (let index = 0; index < numbers.length; index++) {
@@ -50,16 +50,37 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // console.log(resultado);
 
 // #6
-let resultado = 0;
+// let resultado = 0;
 
-for (let index = 0; index < numbers.length; index += 1) {
-    let element = numbers[index];
+// for (let index = 0; index < numbers.length; index += 1) {
+//     let element = numbers[index];
 
-if(resultado === element / 2 % !== 0){
-    console.log(resultado)
-} else {
-    
-}
+// if(element == resultado / 2 % != 0){
+//     console.log(element)
+// } else {
+//     console.log("nenhum valor ímpar encontrado")
+// }
+//     }
+
+// #7
+// let resultado = 0;
+
+// for (let index = 0; index < numbers.length; index += 1) {
+//     let element = numbers[index];
+//     if (element < resultado) {
+//         resultado = element;
+//     }
+// }
+// console.log(resultado);
+
+// #8
+// let list = [];
+
+for (let index = 0; index < list.length; index+=1) {
+    let elemento = list[index]
+    if(elemento >= 1 || <= 25){
+        console.log(list)
     }
+}
 
-console.log(resultado);
+// #9
