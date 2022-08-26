@@ -62,6 +62,7 @@ if(resultado === 0){
     console.log("nenhum valor ímpar encontrado")
 } else {
     console.log(resultado)
+}
 
 #7
 let menorNumero = numbers[0];
