@@ -10,43 +10,56 @@
             integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
             crossorigin="anonymous"
         />
-        <title>Forms</title>
+        <title>TrybeTrip</title>
     </head>
     <body>
         <header>
-            <h1>TrybeTrip</h1>
+            <h1 class="card-body">TrybeTrip</h1>
             <p></p>
-            <h3>Concorra à Viagem dos seus sonhos com a TrybeTrip</h3>
+            <h5 class="card-title">Concorra à Viagem dos seus sonhos com a TrybeTrip</h5>
+            <br />
             <form action="">
                 <fieldset>
-                    <label for="">Nome: </label>
-                    <input id="fullName" type="text" value="" minlength="10" maxlength="40" required />
-                    <p></p>
-                    <label for="">Email: </label>
+                    <div class="mb-3">
+                        <label for="disabledTextInput" class="form-label">Nome</label>
+                        <input type="text" id="disabledTextInput" class="form-control" minlength="10" maxlength="40" required />
+                    </div>
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
                     <input
-                        id="email"
                         type="email"
-                        value=""
-                        placeholder="maria.jose@gmail.com"
-                        minlength="10"
-                        maxlength="50"
-                        required
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder="maria@gmail.com"
+                        aria-describedby="emailHelp"
                     />
+                    <br />
                     <p>Destino favorito:</p>
-                    <label for="destination1">Cidade</label>
-                    <input id="destination1" type="radio" value="cidade" />
-                    <label for="destination2">Campo</label>
-                    <input id="destination2" type="radio" value="campo" />
-                    <label for="destination3">Praia</label>
-                    <input id="destination3" type="radio" value="praia" />
-                    <label for="destination4">Montanhas</label>
-                    <input id="destination4" type="radio" value="montanhas" />
-                    <p></p>
-                    <label for="why">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
-                    <p></p>
-                    <textarea name="" id="why" cols="30" rows="10" maxlength="500"></textarea>
-                    <p></p>
-                    <label for="date">Qual a melhor data para realizar sua viagem?</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Cidade</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Campo</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        <label class="form-check-label" for="inlineRadio3">Praia</label>
+                      </div>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                      <label class="form-check-label" for="inlineRadio3">Montanha</label>
+                    </div>
+                    <br>
+                    <div class="form-floating">
+                        <div></div>
+                        <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+                        <label for="floatingTextarea2"></label>
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="" style="height: 100px" maxlength="500"></textarea>
+                      </div>                      
+                    
+                      <label for="date">Qual a melhor data para realizar sua viagem?</label>
                     <input type="date" />
                     <p></p>
                     <input id="promo" type="checkbox" />
@@ -58,10 +71,11 @@
                         >Concordo que imagens de minhas férias poderão ser usadas na divulgação de concursos futuros.</label
                     >
                 </fieldset>
-                <p></p>
-                <button type="submit" id="submit-btn">Enviar</button>
-                <button type="reset" id="clear-btn">Apagar</button>
-            </form>
+                <nav class="nav nav-pills nav-fill">
+                    <a class="nav-link active" aria-current="page" href="#" id="clear-btn">Limpar</a>
+                    <a class="nav-link active" aria-current="page" href="#" id="submit-btn">Enviar</a>
+                </nav>
+    </form>
             <script src="script.js"></script>
         </header>
         <script
