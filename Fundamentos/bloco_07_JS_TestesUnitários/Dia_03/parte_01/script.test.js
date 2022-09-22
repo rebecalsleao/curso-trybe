@@ -1,5 +1,5 @@
 // 1
-const { sum, myRemove, myFizzBuzz } = require("./script.js");
+const { sum, myRemove, myFizzBuzz, encode, decode } = require("./script.js");
 
 it("retorna resultado da soma", () => {
     expect(sum(4, 5)).toBe(9);
@@ -41,4 +41,22 @@ it("Verificar número que não divisível por 3 e 5", () => {
 
 it("Verificar parâmetro não numérico", () => {
     expect(myFizzBuzz("a")).toBe(false);
+});
+
+// 4
+
+it("Verificar se a expressão encode existe", () => {
+    expect(encode).toBeDefined();
+});
+
+it("Verificar se a expressão encode é uma função", () => {
+    expect(typeof encode).toEqual("function");
+});
+
+it("Verificar se a expressão encode existe", () => {
+    expect(decode).toBeDefined();
+});
+
+it("Verificar se a expressão encode é uma função", () => {
+    expect(typeof decode).toEqual("function");
 });
